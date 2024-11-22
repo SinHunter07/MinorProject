@@ -6,9 +6,9 @@ import uuid
 IMAGES_PATH = 'Tenserflow/workspace/images/collectedimages'
 
 labels = ['hello' , 'thanks','yes','no','i love you']
-number_imgs = 15
+number_imgs = 15  # no.of images 13 for training and 2 for testing 
 
-for label in labels:
+for label in labels:        #for storing the images with help of openxcv 
     os.makedirs(f'Tenserflow\\workspace\\images\\collectimages\\{label}', exist_ok=True)
     cap = cv2.VideoCapture(0)
     print('Collecting images for {}'.format(label))
